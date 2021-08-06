@@ -25,6 +25,9 @@ namespace ListPop.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            //init the modal dialog library
+            Rg.Plugins.Popup.Popup.Init();
+
             return base.FinishedLaunching(app, options);
         }
     }

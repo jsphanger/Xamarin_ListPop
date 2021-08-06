@@ -14,6 +14,9 @@ namespace ListPop.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            //Init the modal popup
+            Rg.Plugins.Popup.Popup.Init(this);
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
